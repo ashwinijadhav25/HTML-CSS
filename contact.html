@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Contact</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<nav>
+<a href="index.html">Home</a>
+<a href="login.html">Office Login</a>
+<a href="about.html">About</a>
+<a href="services.html">Services</a>
+<a href="tracking.html">Track Parcel</a>
+<a href="contact.html">Contact</a>
+</nav>
+<img src="contact.jpeg" alt="contact us" height="400" width="1250">
+<h2>Contact Post Office</h2>
+<p>Email: postoffice@gmail.com</p>
+<p>Phone: +91 9489658566</p>
+<p>Address: Post Office,Chitali</p>
+
+<fieldset style="100px;">
+<h3>Feedback Form</h3>
+<form onsubmit="showMessage(); return false;">
+<input type="text" placeholder="Your Name" required>
+<input type="email" placeholder="Your Email" required>
+<input type="text" placeholder="Subject" required><br><br>
+Feedback:<br>
+     <TEXTAREA rows="6" cols="50"
+     name="commentfield"></TEXTAREA>
+     <br>
+     <INPUT type="submit" value="Submit">
+     <INPUT type="reset" value="Reset">
+</form>
+<p id="msg"></p>
+<script>
+function showMessage() {
+    document.getElementById("msg").innerHTML = "Thank you for your feedback!";
+}
+</script>
+</fieldset>
+<footer class="main-footer">
+<p>&copy 2026 Indian Post Office | All Rights Reserved</p>
+</footer>
+</body>
+</html>
+
